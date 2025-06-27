@@ -13,7 +13,7 @@ const Counter = () => {
 
   return (
     <div style={styles.container}>
-      <h2>Counter: {count}</h2>
+      <h2>Counter:{count}</h2>
       <div>
         <button onClick={handleIncrease} style={styles.button}>Increase</button>
         <button onClick={handleDecrease} style={styles.button}>Decrease</button>
