@@ -8,7 +8,7 @@ const Counter = () => {
   };
 
   const handleDecrease = () => {
-    setCount(count-10);
+    setCount(count-1);
   };
 
   return (
