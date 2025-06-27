@@ -4,11 +4,11 @@ const Counter = () => {
   const [count, setCount] = useState(0);
 
   const handleIncrease = () => {
-    setCount(prev => prev * 10);
+    setCount(count*10);
   };
 
   const handleDecrease = () => {
-    setCount(prev => prev / 10);
+    setCount(count/10);
   };
 
   return (
