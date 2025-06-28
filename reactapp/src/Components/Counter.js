@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 
 const Counter = () => {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
 
   const handleIncrease = () => {
-    setCount(count*1);
+    setCount(count+1);
   };
 
   const handleDecrease = () => {
-    setCount(count/1);
+    setCount(count-1);
   };
 
   return (
     <div style={styles.container}>
       <h2>Counter: {count}</h2>
       <div>
-        <button onClick={handleIncrease} style={styles.button}>Inrease</button>
-        <button onClick={handleDecrease} style={styles.button}>Derease</button>
+        <button onClick={handleIncrease} style={styles.button}>Increase</button>
+        <button onClick={handleDecrease} style={styles.button}>Decrease</button>
       </div>
     </div>
   );
